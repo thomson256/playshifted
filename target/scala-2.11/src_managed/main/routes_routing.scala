@@ -1,6 +1,6 @@
 // @SOURCE:/home/tommi/Copy/dev/play/playshifted/conf/routes
 // @HASH:b31e3ed4075748bc0576b3b7654b92b97f9d84ad
-// @DATE:Wed Apr 08 02:18:27 EEST 2015
+// @DATE:Wed Apr 08 03:48:59 EEST 2015
 
 
 import play.core._

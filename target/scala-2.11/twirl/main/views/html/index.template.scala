@@ -45,7 +45,7 @@ Seq[Any](format.raw/*1.19*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Wed Apr 08 02:18:29 EEST 2015
+                  DATE: Wed Apr 08 03:49:00 EEST 2015
                   SOURCE: /home/tommi/Copy/dev/play/playshifted/app/views/index.scala.html
                   HASH: 2525948bb0b9a19833e9b9027e706281dd6c624c
                   MATRIX: 723->1|828->18|856->21|887->44|926->46|958->53|972->59|1025->92|1057->95

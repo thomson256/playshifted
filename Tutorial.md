@@ -93,10 +93,10 @@ tar xzf jdk-8u40-linux-x64.tar.gz
 	
 	java -version
 
-- Same JAVA_HOME path on action_hooks ``start`` 
+- Same JAVA_HOME path on action_hooks ``start`` so it will be always there for Play as well
 	
 	#java 8
-	export JAVA_HOME="$OPENSHIFT_DATA_DIR/jdk/jdk1.8.0_40"
+	export JAVA_HOME="$OPENSHIFT_DATA_DIR/jdk1.8.0_40"
 	export PATH=$JAVA_HOME/bin:$PATH
 
 
