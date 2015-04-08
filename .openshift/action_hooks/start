@@ -28,7 +28,4 @@ APP_COMMAND="${OPENSHIFT_REPO_DIR}/target/universal/stage/bin/${OPENSHIFT_APP_NA
 echo $APP_COMMAND &>> $LOG_FILE
 nohup bash -c "${APP_COMMAND} &>> ${LOG_FILE} 2>&1" &> /dev/null &
 
-
-
-./playshifted -Dhttp.port=${OPENSHIFT_DIY_PORT} -Dhttp.address=${OPENSHIFT_DIY_IP} -Dconfig.resource=openshift.conf
-
+echo [Start finished \\o/]
