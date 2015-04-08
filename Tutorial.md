@@ -76,36 +76,26 @@ But really you don't have to care about this.._
 
 # Java 8 update
 
-Java 8... (testing now)
-
 - Install Java 8 as pointed out here: 
 http://tecadmin.net/install-java-8-on-centos-rhel-and-fedora/
 
-cd ${OPENSHIFT_DATA_DIR}
-wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u40-b25/jdk-8u40-linux-x64.tar.gz"
+		cd ${OPENSHIFT_DATA_DIR}
+		wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u40-b25/jdk-8u40-linux-x64.tar.gz"
 
-tar xzf jdk-8u40-linux-x64.tar.gz
+		tar xzf jdk-8u40-linux-x64.tar.gz
 
 - Test Java 8
 	- Set env variable for this session:
-	export JAVA_HOME="$OPENSHIFT_DATA_DIR/jdk1.8.0_40"
-	export PATH=$JAVA_HOME/bin:$PATH
+
+		export JAVA_HOME="$OPENSHIFT_DATA_DIR/jdk1.8.0_40"
+		export PATH=$JAVA_HOME/bin:$PATH
 	
-	java -version
+		java -version
 
 - Same JAVA_HOME path on action_hooks ``start`` so it will be always there for Play as well
 	
-	#java 8
-	export JAVA_HOME="$OPENSHIFT_DATA_DIR/jdk1.8.0_40"
-	export PATH=$JAVA_HOME/bin:$PATH
-
-
-
---------------------
-
-wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u5-b13/jdk-8u5-linux-x64.tar.gz
-tar -zxf jdk-8u5-linux-x64.tar.gz
-export PATH=$OPENSHIFT_DATA_DIR/jdk1.8.0_05/bin:$PATH
-export JAVA_HOME="$OPENSHIFT_DATA_DIR/jdk/jdk1.8.0_05"
+		#java 8
+		export JAVA_HOME="$OPENSHIFT_DATA_DIR/jdk1.8.0_40"
+		export PATH=$JAVA_HOME/bin:$PATH
 
 
