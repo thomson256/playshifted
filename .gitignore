@@ -1,7 +1,7 @@
 logs
-#project/project
-#project/target
-#target
+#project/project #for openshift deployment, NOT commented
+#project/target  #for openshift deployment, NOT commented
+#target		 #for openshift deployment, NOT commented
 tmp
 .history
 dist
